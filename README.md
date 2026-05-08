@@ -66,12 +66,11 @@ The solution is designed for smart TVs, streaming platforms, and future AI-power
 ---
 
 ## Example image
-
-![Smart TV](https://upload.wikimedia.org/wikipedia/commons/5/59/Smart_TV.jpg)
+![SmartTV Concept](smarttv-gen-concept-illustration.png)
 
 Example with resized image:
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Smart_TV.jpg" width="400">
+<img src="smarttv-gen-concept-illustration.png" width="400">
 
 ---
 
