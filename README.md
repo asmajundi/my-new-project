@@ -4,76 +4,150 @@ Copy the template, paste it to your GitHub README and edit! -->
 
 # Project Title
 
+SmartTV-Gen: On‑Demand AI Movie Generator  
 Final project for the Building AI course
+An AI concept for personalized entertainment generated in real time.
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+SmartTV‑Gen explores the idea of a future TV feature where you can simply ask your TV to create a brand‑new movie for you. The user chooses the actors, genre, and length and the system generates a personalized film on the spot. 
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Finding a movie that fits your taste can take a lot of time even with today’s large streaming libraries. The selection is big but still limited to what has already been produced. This project looks at how AI could make entertainment more flexible and tailored to each viewer.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Problems this idea touches on:
 
+- It takes time to search for the “right” movie
+- Limited content in certain languages or for specific groups
+- Hard for children, elderly people or beginners to find suitable content
+- Entertainment today is not truly personalized
+
+Motivation
+I’m interested in how AI can change everyday experiences and make technology more responsive to individual needs. Entertainment is an area where AI is developing quickly and it feels exciting to imagine what might be possible in the near future.
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+The solution is designed for smart TVs, streaming platforms, and future AI-powered entertainment systems. The user interacts with the TV using voice commands instead of manually searching through large streaming libraries.
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+### Example process
+1. The user turns on the smart TV.  
+2. They give a voice command such as:  
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+> “Create a 90-minute comedy movie with two female detectives in Stockholm.”
 
-This is how you create code examples:
+3. The AI system analyzes the request.  
+4. The system generates the script, characters, voices, scenes, and video.  
+5. The movie starts playing automatically.
+
+### Situations where the solution is useful
+- Family movie nights  
+- Personalized entertainment at home  
+- Users who cannot easily search manually  
+- People who want content in their own language  
+- Fast entertainment recommendations without endless browsing  
+
+### Target users
+- Families  
+- Children  
+- Elderly people  
+- Smart home users  
+- Streaming platform users  
+- People with accessibility needs  
+
+### Important user needs
+- Easy voice interaction  
+- Fast response time  
+- Safe and appropriate content  
+- Support for multiple languages  
+- Privacy protection for voice data  
+
+---
+
+## Example image
+
+![Smart TV](https://upload.wikimedia.org/wikipedia/commons/5/59/Smart_TV.jpg)
+
+Example with resized image:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Smart_TV.jpg" width="400">
+
+---
+
+## Example code
+
+```python
+def create_movie():
+    genre = input("Choose genre: ")
+    actor = input("Choose actor: ")
+    length = input("Movie length in minutes: ")
+
+    print("Generating your movie...")
+    print(f"Creating a {genre} movie starring {actor} with a length of {length} minutes.")
+
+create_movie()
 ```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
+---
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
+The project would use data collected from existing movie and media databases.
+
+### Possible data sources
+- [IMDb](https://www.imdb.com/)
+- [TMDb](https://www.themoviedb.org/)
+- Licensed movie and video datasets
+- Voice datasets for speech generation
+- Public text datasets for storytelling and dialogue
+
+### AI methods used
+- Natural Language Processing (NLP)
+- Speech Recognition
+- Text-to-Video Generation
+- Voice Cloning
+- Machine Learning Recommendation Systems
+
+### Example technologies
+| Technology | Purpose |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| NLP | Understanding voice commands |
+| Text-to-video AI | Generating movie scenes |
+| Voice synthesis | Creating realistic voices |
+| Machine learning | Personalizing recommendations |
 
 ## Challenges
-
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+- Legal issues around using real actors’ faces and voices  
+- Ethical concerns related to deepfakes  
+- High computational cost for generating long videos  
+- Current video generation models still have quality limitations  
+- The system must include strong safety filters to avoid inappropriate content  
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+- Start by generating short clips instead of full movies  
+- Use fictional, AI-created actors to avoid copyright issues  
+- Build a simple prototype as a mobile or web app  
+- Improve video quality and consistency  
+- Collaborate with people in film, design, and AI development  
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+This project was inspired by recent developments in generative AI, especially text-to-video models, voice synthesis, and AI-generated media.
+Some useful sources and inspirations include:
+
+### Generative video and language models
+- Text-to-Video Generation Survey (arXiv)
+- State of Open Video Generation Models (Hugging Face)
+
+### Open-source AI tools
+- Hugging Face Diffusers
+- Research on GANs, VAEs, and diffusion models
+
+### AI and the future of media
+- Generative AI for Text-to-Video: Future Directions
+- Research discussions about ethics and AI-generated media
+
+I also want to acknowledge the wider AI community for ongoing discussions about creativity, ethics, and the future of digital entertainment.
