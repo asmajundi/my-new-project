@@ -5,7 +5,6 @@ Copy the template, paste it to your GitHub README and edit! -->
 # Project Title
 
 SmartTV-Gen: On‑Demand AI Movie Generator 
-
 Building AI course project
 Final project for the Building AI course
 An AI concept for personalized entertainment generated in real time.
